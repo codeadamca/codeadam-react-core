@@ -1,0 +1,10 @@
+
+Sitemap: https://professoradamthomas.com/sitemap.xml
+
+User-agent: *
+Disallow: /includes/
+Disallow: /tep/
+Disallow: /styles/
+Disallow: /video/
+Disallow: /script/
+Disallow: /documents/
