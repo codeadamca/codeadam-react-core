@@ -1,6 +1,6 @@
-import React from "react";
-import {BrowserRouter, Switch} from 'react-router-dom';
-import {Page} from './extensions/Page';
+import React from 'react';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import { Page } from './extensions/Page';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -16,23 +16,17 @@ function App() {
     <BrowserRouter>
       <ScrollToTop></ScrollToTop>
       <div className="App">
-        
         <Nav></Nav>
 
         <main className="w3-padding-medium">
-
           <Switch>
-
             <Page exact path="/" component={Home} title="Teaching Code"></Page>
 
             <Page path="*" component={NotFound} title="Page Not Found"></Page>
-            
           </Switch>
-
         </main>
 
         <Footer></Footer>
-
       </div>
     </BrowserRouter>
   );

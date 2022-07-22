@@ -23,12 +23,11 @@ a:link,
 a:active,
 a:hover,
 a:visited {
-  color: #eb741d;
+  color: #eb062c;
 }
 p, blockquote {
   text-align: justify;
 }
-
 code {
   color:#00f;
   border: 1px solid #eee;
@@ -194,6 +193,12 @@ pre code.hljs {
   height: auto;
   text-decoration: none;
 }
+.ca-image-large {
+  display: inline-block;
+  width: 600px;
+  height: auto;
+  text-decoration: none;
+}
 
 /* Banners banners */
 .ca-third {
@@ -287,4 +292,15 @@ pre code.hljs {
 }
 .w3-orange {
   background-color: #eb741d!important;
+}
+
+header h1 span,
+header h2 span,
+header p span {
+  background-color: #000;
+  display: inline-block;
+  padding: 2px 5px;
+}
+header p {
+  margin: 3px;
 }
