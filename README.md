@@ -1,4 +1,4 @@
-# codeadam-react-core
+# React Core for codeadam.ca Assets
 
 The React core I use to build codeadam.ca assets. Cire is currently used at the following asstes:
 
