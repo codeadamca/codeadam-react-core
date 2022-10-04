@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React, { Component } from 'react';
 
 import Error from './../components/Error';
 import Loading from './../components/Loading';
@@ -9,27 +9,33 @@ class SocialList extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      socials: []
+      socials: [],
     };
   }
 
   componentDidMount() {
-    fetch(process.env.REACT_APP_API_URL + "socials/" + this.props.filter + "/" + this.props.value)
+    fetch(
+      process.env.REACT_APP_API_URL +
+        'socials/' +
+        this.props.filter +
+        '/' +
+        this.props.value
+    )
       .then(res => res.json())
       .then(
-        (result) => {
+        result => {
           this.setState({
             isLoaded: true,
-            socials: result
+            socials: result,
           });
         },
-        (error) => {
+        error => {
           this.setState({
             isLoaded: true,
-            error
+            error,
           });
         }
-      )
+      );
   }
 
   render() {
@@ -41,26 +47,27 @@ class SocialList extends Component {
     } else {
       return (
         <div className="SocialList">
-
           <article className="ca-container-800 w3-center">
-
             <hr className="ca-hr" />
 
             {this.state.socials.map((social, index) => (
-              <>
+              <span key={index}>
                 <a href={social.url} className="ca-font-none" key={index}>
-                  
-                  <img src={social.image} 
-                    className="ca-image-small ca-margin-small-horizontal ca-margin-small-vertical" 
-                    alt={social.title + ' logo'} />
-                </a>                
-                {((index + 1) === Math.round(this.state.socials.length / 2) && this.props.br) ? <br /> : ''}
-                
-              </>
+                  <img
+                    src={social.image}
+                    className="ca-image-small ca-margin-small-horizontal ca-margin-small-vertical"
+                    alt={social.title + ' logo'}
+                  />
+                </a>
+                {index + 1 === Math.round(this.state.socials.length / 2) &&
+                this.props.br ? (
+                  <br />
+                ) : (
+                  ''
+                )}
+              </span>
             ))}
-
           </article>
-
         </div>
       );
     }
