@@ -1,12 +1,12 @@
 # React Core for codeadam.ca Assets
 
-The React core I use to build codeadam.ca assets. Cire is currently used at the following asstes:
+The React core I use to build codeadam.ca assets. This core is currently used at the following asstes:
 
 - https://codeadam.ca/
 - https://academicintegrity.codeadam.ca/
 - https://pages.codeadam.ca/teaching-code/
 
-## Requirements:
+## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
 * [React](https://reactjs.org/)
