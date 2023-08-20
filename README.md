@@ -6,6 +6,8 @@ The React core I use to build codeadam.ca assets. This core is currently used at
 - https://academicintegrity.codeadam.ca/
 - https://pages.codeadam.ca/teaching-code/
 
+***
+
 ## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
